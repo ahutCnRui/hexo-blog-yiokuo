@@ -2253,9 +2253,60 @@ blockquote footer cite:before {
 }
 #nav.full_page #site-info {
   position: absolute;
-  top: 43%;
+  top: 25%;
   padding: 0 0.5rem;
   width: 100%;
+}
+#nav.full_page #site-info .avatar-img {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  border-radius: 70px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#nav.full_page #site-info .card-info-data {
+  display: table;
+  padding: 0.7rem 0;
+  width: 35%;
+  margin: 0px auto;
+  table-layout: fixed;
+}
+#nav.full_page #site-info .card-info-data > .card-info-data-item {
+  display: table-cell;
+}
+#nav.full_page #site-info .card-info-data > .card-info-data-item a .headline {
+  overflow: hidden;
+  color: #f5f5f5;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.2rem;
+}
+#nav.full_page #site-info .card-info-data > .card-info-data-item a .length_num {
+  margin-top: -0.3rem;
+  color: $orange_2;
+  font-size: 1rem;
+}
+#nav.full_page #site-info #bookmark-it {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background-color: #49b1f5;
+  color: #fff;
+  line-height: 1.6rem;
+  width: 35%;
+  margin: 0px auto;
+}
+#nav.full_page #site-info #bookmark-it span {
+  padding-left: 0.5rem;
 }
 #nav #site_title,
 #nav #site_subtitle,
@@ -2273,7 +2324,7 @@ blockquote footer cite:before {
   font-size: 0.8rem;
 }
 #nav #site_social_icons {
-  display: none;
+  display: block;
   margin: 0 auto;
   width: 15rem;
   text-align: center;
@@ -2547,6 +2598,15 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
+  #nav.full_page #site-info .card-info-data {
+    width: 15%;
+  }
+  #nav.full_page #site-info .card-info-data > .card-info-data-item a .headline {
+    font-size: 0.9rem;
+  }
+  #nav.full_page #site-info #bookmark-it {
+    width: 15%;
+  }
   #nav #site_title {
     font-size: 2rem;
   }
